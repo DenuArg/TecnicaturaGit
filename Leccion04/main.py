@@ -1,68 +1,124 @@
-
 # lista = Ariel, Liliana, Natalia, Osvaldo
 # Lista con 4 elementos
 
-nombres = ["Naty", "Osvaldo", "Lily", "Ariel"] # podemos usar las comillas dobles o comillas simples
+"""nombres = ["Naty", "Osvaldo", "Lily", "Ariel"]  # podemos usar las comillas dobles o comillas simples
 print(nombres)
-print(nombres[0]) # nos muestra el primer elemento de la lista
+print(nombres[0])  # nos muestra el primer elemento de la lista
 print(nombres[1])
 
 # ¿Como podemos mostrar el ultimo elemento?
-print(nombres[-1]) #el ultimo indice
-print(nombres[-2]) #el penultimo indice
+print(nombres[-1])  # el ultimo indice
+print(nombres[-2])  # el penultimo indice
 
-#recuperar un rango de la lista
-print(nombres[0:2]) #recorrer una cantidad de indices, del 0 al 1, la posiciion 2 no la va a recorer.
-print(nombres[ :3]) #queremos las tres primeras posiciones, el compilador entiende que empieza del indice 0
-print(nombres[1: ]) #queremos que ejecute desde el indice 1
+# recuperar un rango de la lista
+print(nombres[0:2])  # recorrer una cantidad de indices, del 0 al 1, la posiciion 2 no la va a recorer.
+print(nombres[:3])  # queremos las tres primeras posiciones, el compilador entiende que empieza del indice 0
+print(nombres[1:])  # queremos que ejecute desde el indice 1
 
-#modificar un valor de esa lista
-nombres[2]="Liliana" #se modifica el indice 3
-nombres[0]="Natalia"
+# modificar un valor de esa lista
+nombres[2] = "Liliana"  # se modifica el indice 3
+nombres[0] = "Natalia"
 print(nombres)
 
-#ahora vamos a iterar nuestra lista con el ciclo for (para mostrar nombre por nombre)
+# ahora vamos a iterar nuestra lista con el ciclo for (para mostrar nombre por nombre)
 
-for nombre in nombres: #nombre es singular, la lista es plural
+for nombre in nombres:  # nombre es singular, la lista es plural
     print(nombre)
 else:
     print("Se acabaron los elementos de la lista")
 
 # parte 3 de las listas
 
-#preguntamos cuàntos elementos tiene una lista
-print(len(nombres)) #le pasamos como parametro la lista, nos devuelve la cantidad de elementos de la lista
+# preguntamos cuàntos elementos tiene una lista
+print(len(nombres))  # le pasamos como parametro la lista, nos devuelve la cantidad de elementos de la lista
 
-#agregamos un elemento, funcion para insertar un elemento en la lista
-nombres.append("Marcelo") #se agrega al final de la lista
-print(nombres) #efecto cola, se agrega al final de la fila
+# agregamos un elemento, funcion para insertar un elemento en la lista
+nombres.append("Marcelo")  # se agrega al final de la lista
+print(nombres)  # efecto cola, se agrega al final de la fila
 
-#insertar un elemento en un indice especifico
-nombres.insert(0,"Carla") #se agrega un elemento, en la posicion 0
+# insertar un elemento en un indice especifico
+nombres.insert(0, "Carla")  # se agrega un elemento, en la posicion 0
 print(nombres)
-nombres.insert(1,"Estela")
+nombres.insert(1, "Estela")
 print(nombres)
 
-#eliminar elemento especifico
+# eliminar elemento especifico
 
-nombres.remove("Osvaldo") # remover, elimina el nombre osvaldo
+nombres.remove("Osvaldo")  # remover, elimina el nombre osvaldo
 print(nombres)
 
 # eliminar el ultimo elemento
 
-nombres.pop() #elimina el ultimo elemento que habia en nuestra lista
+nombres.pop()  # elimina el ultimo elemento que habia en nuestra lista
 print(nombres)
 
-#eliminar un indice especifico
-del nombres[1] #posisicion 1, Natalia tendria q desaparece
+# eliminar un indice especifico
+del nombres[1]  # posisicion 1, Natalia tendria q desaparece
 print(nombres)
 
-#eliminar borrar todos los elementos
+# eliminar borrar todos los elementos
 nombres.clear()
-print(nombres) #aparecen solo los corchetes
+print(nombres)  # aparecen solo los corchetes
 
-#eliminar lista
+# eliminar lista
 del nombres
-print(nombres)
+# print(nombres)
 
+# Los diccionarios pueden almacenar diferentes tipos de datos
+diccionario2 = {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""
+
+# Dada la siguiente tupla
+tupla = (13, 1, 8, 3, 2, 5, 8)  # Definida la tupla
+# Crear una lista que solo incluya los números menores a 5 e imprima por consola [1,3,2]
+
+lista = []  # se define la lista
+#Se filtran los elementos de la tupla que son menores a 5
+
+for elemento in tupla:
+    if elemento <5:
+        lista.append(elemento)
+
+print("Los números menores de 5  de la tupla son:", lista)
 
