@@ -22,6 +22,6 @@ public class Ciclos03 {
             }
             numero = Integer.parseInt(JOptionPane.showInputDialog("Digite otro número: "));
         }
-        JOptionPane.showMessageDialog(null, "El número ingresado es: " + numero + " finaliza el programa");
+        JOptionPane.showMessageDialog(null, "El número ingresado es: " + numero + " Programa finalizado");
     }
 }
